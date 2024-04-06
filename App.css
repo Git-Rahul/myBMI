@@ -1,0 +1,139 @@
+#root {
+  max-height: fit-content;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1:hover {
+  text-shadow: 2px 2px 2px 2px inset #000;
+  animation: 0.4s ripple reverse;
+}
+@keyframes ripple {
+  0% {
+    scale: 1.01;
+  }
+  20% {
+    scale: 1.03;
+    opacity: 0.8;
+  }
+  40% {
+    scale: 1.05;
+    opacity: 0.6;
+  }
+  60%{
+    scale: 1.07;
+    opacity: 0.4;
+  }
+  80%{
+    scale: 1.09;
+    opacity: 0.2;
+  }
+  100%{
+    scale:1.11;
+    opacity:0;
+  }
+}
+
+.calcbtn {
+  border-radius: 5px;
+  margin-left: -30px;
+  border: none;
+  background: rgb(171, 108, 255);
+  font-size: 16px;
+  width: 150px;
+  height: 40px;
+  box-shadow: 4px 4px 0px 0px #000;
+}
+.calcbtn:hover {
+  background: rgb(144, 60, 255);
+  transform: translate3d(3px, 3px, 3px);
+  box-shadow: 2px 2px 0px 0px #000;
+}
+.disablebtn {
+  border-radius: 5px;
+  margin-left: -30px;
+  border: none;
+  background: rgb(117, 117, 117);
+  font-size: 16px;
+  width: 150px;
+  height: 40px;
+  box-shadow: 4px 4px 0px 0px #000;
+}
+input {
+  height: 40px;
+  text-align: left;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.inputs {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 150px 140px;
+  grid-template-rows: 70px 70px;
+  column-gap: 10px;
+}
+.tbl {
+  text-align: left;
+  margin: auto;
+  border: 1px black solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0px rgb(21, 21, 21);
+}
+.tdbmi1 {
+  color: black;
+  border: 1px black solid;
+  padding-right: 40px;
+  background: rgb(255, 244, 88);
+}
+.tdbmi2 {
+  color: black;
+  border: 1px black solid;
+  background: rgb(74, 226, 105);
+}
+.tdbmi3 {
+  color: black;
+  border: 1px black solid;
+  background: rgb(255, 170, 73);
+}
+.tdbmi4 {
+  color: black;
+  border: 1px black solid;
+  border-radius: 0px 0px 0px 10px;
+  background: rgb(255, 70, 70);
+}
+.thead {
+  background: rgb(82, 82, 82);
+  border: 1px black solid;
+  border-radius: 10px 0px 0px 0px;
+}
+.tdval1 {
+  border: 1px solid black;
+}
+.tdval2 {
+  border: 1px solid black;
+}
+.tdval3 {
+  border: 1px solid black;
+}
+.tdval4 {
+  border: 1px solid black;
+  border-radius: 0px 0px 10px 0px;
+}
+.tdval1glow {
+  box-shadow: 0px 0px 6px 1px inset rgb(255, 241, 48);
+}
+.tdval2glow {
+  box-shadow: 0px 0px 6px 1px inset rgb(46, 255, 88);
+}
+.tdval3glow {
+  box-shadow: 0px 0px 6px 1px inset rgb(255, 153, 37);
+}
+.tdval4glow {
+  box-shadow: 0px 0px 6px 1px inset rgb(255, 42, 42);
+}
